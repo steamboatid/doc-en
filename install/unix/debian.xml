@@ -24,7 +24,7 @@
   <title>Using APT</title>
    <simpara>
     First, note that other related packages may be desired like
-    <literal>libapache2-mod-php5</literal> to integrate with Apache 2, and
+    <literal>libapache2-mod-php8.0</literal> to integrate with Apache 2, and
     <literal>php-pear</literal> for PEAR.
    </simpara>
    <simpara>
@@ -36,7 +36,7 @@
     <title>Debian Install Example with Apache 2</title>
     <programlisting role="shell">
 <![CDATA[
-# apt-get install php5-common libapache2-mod-php5 php5-cli
+# apt-get install php8.0-common libapache2-mod-php8.0 php8.0-cli
 ]]>
     </programlisting>
    </example>
@@ -69,15 +69,15 @@
     <title>Methods for listing additional PHP 5 packages</title>
     <programlisting role="shell">
 <![CDATA[
-# apt-cache search php5
-# aptitude search php5
-# aptitude search php5 |grep -i mysql
+# apt-cache search php8.0
+# aptitude search php8.0
+# aptitude search php8.0 |grep -i mysql
 ]]>
     </programlisting>
    </example>
    <simpara>
     The examples will show a lot of packages including several PHP specific ones
-    like php5-cgi, php5-cli and php5-dev. Determine which are needed
+    like php8.0-cgi, php8.0-cli and php8.0-dev. Determine which are needed
     and install them like any other with either <literal>apt-get</literal>
     or <literal>aptitude</literal>. And because Debian performs
     dependency checks, it'll prompt for those so for example to install
